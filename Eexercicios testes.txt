@@ -1,0 +1,30 @@
+programa.py
+
+from classeDestino import Destino
+from classeDestinoRepository import DestinoRepository
+from Interface import UserInterface
+
+
+destino = DestinoRepository()
+destino.set_adicionarDDD(Destino(75, "Lauro de Freitas"))
+destino.set_adicionarDDD(Destino(81, "Recife"))
+destino.set_adicionarDDD(Destino(98, "São Luis"))
+destino.set_adicionarDDD(Destino(86, "Fortaleza"))
+destino.set_adicionarDDD(Destino(79, "Aracaju"))
+destino.set_adicionarDDD(Destino(51, "Porto Alegre"))
+destino.set_adicionarDDD(Destino(71, "Salvador"))
+destino.set_adicionarDDD(Destino(48), "Florianópolis"))
+
+
+print(destino)
+
+user_interface = UserInterface(destino)
+
+while user_interface.get_interacao():
+    pass
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Secur
